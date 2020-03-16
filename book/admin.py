@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import CompanyRegister, RoomAdd, Compadd, Login, HrLogin, EventAdd
+from .models import CompanyRegister, RoomAdd, Compadd, Login, HrLogin, EventAdd, RoomAdd
 
 admin.site.register(CompanyRegister)
 admin.site.register(RoomAdd)

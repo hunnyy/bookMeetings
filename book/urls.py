@@ -7,6 +7,7 @@ router = routers.DefaultRouter()
 router.register('HrLogin', views.HrLoginView)
 router.register('Compadd', views.Addcompview)
 router.register('EventAdd', views.EventAddView)
+router.register('Addroom', views.Roomaddview)
 
 
 

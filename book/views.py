@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .models import CompanyRegister, RoomAdd, Login, HrLogin, EventAdd
 from rest_framework import viewsets
-from .serializers import AddcompSerializer, AddroomSerializer, HrLoginSerializer, EventAddSerializer
+from .serializers import AddcompSerializer, RoomaddSerializer, HrLoginSerializer, EventAddSerializer
 from .forms import Addcomp, LoginForm, RegisterForm
 from django.views.decorators.csrf import csrf_exempt
 
@@ -11,9 +11,9 @@ class Addcompview(viewsets.ModelViewSet):
 	queryset = CompanyRegister.objects.all()
 	serializer_class = AddcompSerializer
 
-class AddroomSerializer(viewsets.ModelViewSet):
-	queryset = CompanyRegister.objects.all()
-	serializer_class = AddroomSerializer
+class Roomaddview(viewsets.ModelViewSet):
+	queryset = RoomAdd.objects.all()
+	serializer_class = RoomaddSerializer
 
 class HrLoginView(viewsets.ModelViewSet):
 	queryset = HrLogin.objects.all()

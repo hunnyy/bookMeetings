@@ -6,7 +6,7 @@ class AddcompSerializer(serializers.HyperlinkedModelSerializer):
 		model = CompanyRegister
 		fields = ('name', 'Credits', 'DefaultCredits', 'Property')
 
-class AddroomSerializer(serializers.HyperlinkedModelSerializer):
+class RoomaddSerializer(serializers.HyperlinkedModelSerializer):
 	class Meta:
 		model = RoomAdd
 		fields = ('Roomname', 'CreditsPerHr', 'Capacity', 'Property')

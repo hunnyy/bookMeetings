@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+
+{% csrf_token %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addcompany</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Dark.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="login-clean">
+        <form method="post">
+            <!--<h2 class="sr-only">Login Form</h2>-->
+            <div class="illustration"></div>
+            <h2>Add Company</h2>
+            <div class="form-group"><input class="form-control" type="Text" name="Name" placeholder="Name"></div>
+            <div class="form-group"><input class="form-control" type="Text" name="Credits" placeholder="Credits"></div>
+            <!--<div class="form-group"><input class="form-control" type="Text" name="Default Credits" placeholder="Default Credits"></div>
+            <div class="form-group"><input class="form-control" type="Text" name="Property" placeholder="Property"></div>-->
+            <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Add</button></div>
+            <!--<a href="#" class="forgot">Forgot your email or password?</a></form>-->
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
